@@ -1,6 +1,5 @@
 # Databricks notebook source
 # MAGIC %md ## Quick Start Using Python
-# MAGIC * This notebook is a quick start to using Python with Spark
 # MAGIC * Using a Databricks notebook to showcase RDD operations using Python
 # MAGIC * Reference http://spark.apache.org/docs/latest/quick-start.html
 
@@ -11,19 +10,13 @@ display(dbutils.fs.ls("/databricks-datasets/samples/docs/"))
 
 # COMMAND ----------
 
-# MAGIC %md
-# Flagged 
-# MAGIC ## ALTER TABLES
-
-# COMMAND ----------
-
 # Setup the textFile RDD to read the README.md file
 #   Note this is lazy 
 textFile = sc.textFile("/databricks-datasets/samples/docs/README.md")
 
 # COMMAND ----------
 
-# MAGIC %md RDDs have ***actions***, which return values, and ***transformations***, which return pointers to new RDDs
+# MAGIC %md RDDs have ***actions***, which return values, and ***transformations***, which return pointers to new RDDs.
 
 # COMMAND ----------
 
