@@ -10,6 +10,9 @@ display(dbutils.fs.ls("/databricks-datasets/samples/docs/"))
 
 # COMMAND ----------
 
+# MAGIC %md
+# this_is_the_pattern ## 
+
 # Setup the textFile RDD to read the README.md file
 #   Note this is lazy 
 textFile = sc.textFile("/databricks-datasets/samples/docs/README.md")
